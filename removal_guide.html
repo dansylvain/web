@@ -60,51 +60,42 @@ code {
 </style>
 </head>
 <body>
-<header>
-    <h1>Pop-Up Removal Guide</h1>
-    <div class="logo">SecureTech Solutions</div>
-</header>
-
-<div class="container">
-    <h2>How to Remove the Annoying Pop-Up Script</h2>
-
-    <div class="warning">
-        <strong>Warning:</strong> This guide is for advanced users only. Incorrect modifications to your website's code can cause unexpected issues. Always backup your files before making changes.
-    </div>
-
-    <h3>Step 1: Identify the Pop-Up Script</h3>
-    <p>First, you need to locate the script causing the pop-ups. It's likely in one of your HTML files or a separate JavaScript file.</p>
-
-    <h3>Step 2: Remove or Comment Out the Script</h3>
-    <p>Once you've found the script, you can either remove it entirely or comment it out. To comment out JavaScript, use <code>/*</code> at the beginning and <code>*/</code> at the end of the script.</p>
-
-    <h3>Step 3: Check for Event Listeners</h3>
-    <p>The pop-up might be triggered by event listeners. Look for code like this:</p>
-    <pre><code>document.addEventListener('click', function() {
-    // Pop-up code here
-});</code></pre>
-    <p>Remove or comment out these listeners.</p>
-
-    <h3>Step 4: Remove Any Related CSS</h3>
-    <p>The pop-up might have associated CSS. Look for classes or IDs related to the pop-up and remove them from your stylesheet.</p>
-
-    <h3>Step 5: Clear Browser Cache</h3>
-    <p>After making these changes, clear your browser cache to ensure you're seeing the updated version of your site.</p>
-
-    <div class="note">
-        <strong>Note:</strong> If you're using a content management system (CMS) like WordPress, the pop-up might be coming from a plugin. In this case, you can simply deactivate or uninstall the plugin causing the pop-ups.
-    </div>
-
-    <h3>Alternative Solution: Use a Pop-Up Blocker</h3>
-    <p>If you don't have access to edit the website's code, you can use a pop-up blocker extension for your browser. Here are some popular options:</p>
-    <ul>
-        <li><a href="https://websim.ai/chrome-store/popup-blocker">ChromeGuard Pop-Up Blocker</a></li>
-        <li><a href="https://websim.ai/firefox-addons/nopopup">Firefox NoPopup Extension</a></li>
-        <li><a href="https://websim.ai/edge-extensions/popupshield">Edge PopupShield</a></li>
-    </ul>
-
-    <h3>Need Further Assistance?</h3>
-    <p>If you're still experiencing issues or need professional help, don't hesitate to <a href="https://websim.ai/secure-tech-solutions/contact">contact our support team</a>. We're here to help!</p>
-</div>
-
-</body></html
+	<header>
+		<h1>Pop-Up Removal Guide</h1>
+		<div class="logo">SecureTech Solutions</div>
+	</header>
+	
+	<div class="container">
+		<h2>How to Remove the Annoying Pop-Up Script</h2>
+	
+		<div class="warning">
+			<strong>Warning:</strong> This guide is for advanced users only. Incorrect modifications can cause unexpected issues. Always backup your files before making changes.
+		</div>
+	
+		<h3>Step 1: Open the System Monitoring Center</h3>
+		<p>First, open the System Monitoring Center. You can usually find this in your system's menu under System Tools or by searching for "System Monitor".</p>
+	
+		<h3>Step 2: Navigate to the Processes Tab</h3>
+		<p>Once the System Monitoring Center is open, go to the <strong>Processes</strong> tab. This tab shows a list of all running processes on your system.</p>
+	
+		<h3>Step 3: Identify the Pop-Up Script</h3>
+		<p>Look through the list of processes to find the one named <code>pop_up.sh</code>. This is the script causing the pop-ups.</p>
+	
+		<h3>Step 4: Kill the Pop-Up Script</h3>
+		<p>Once you've identified the process, right-click on it and select <strong>Kill</strong> or <strong>End Process</strong>. This will stop the script and remove the pop-ups.</p>
+	
+		<div class="note">
+			<strong>Note:</strong> If you are unable to find the <code>pop_up.sh</code> process, try sorting the processes by CPU usage or memory usage to locate the script more easily.
+		</div>
+	
+		<h3>Alternative Solution: Use Command Line</h3>
+		<p>If you prefer using the command line, open a terminal and type the following command to find the process ID (PID) of the script:</p>
+		<pre><code>ps aux | grep pop_up.sh</code></pre>
+		<p>Then, use the <code>kill</code> command followed by the PID:</p>
+		<pre><code>kill [PID]</code></pre>
+	
+		<h3>Need Further Assistance?</h3>
+		<p>If you're still experiencing issues or need professional help, don't hesitate to contact our support team. We're here to help!</p>
+	</div>
+	
+	</body></html
