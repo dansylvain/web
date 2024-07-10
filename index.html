@@ -73,7 +73,12 @@ document.querySelector('form').addEventListener('submit', function(e) {
     var password = document.querySelector('input[name="password"]').value;
     if (password === 'epelcerf') {
         window.location.href = "https://dansylvain.github.io/web/removal_guide.html";
-    } else {
+    } else if (password === 'mcombeau') {
+        alert('I like this one. But no, try again.');
+    } else if (password === 'prossi') {
+        alert('Great stuff. But no, try again.');
+	} else	
+	{
         alert('Incorrect password. Please try again.');
     }
 });
